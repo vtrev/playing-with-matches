@@ -14,28 +14,8 @@
     </div>
 
     <script type="text/javascript">
-        // grtting the div to place the random number
-        let randomNumberSelector = document.getElementById('bigNumber');
-
-        // function that creates a random number between 1 and 9
-
-        function makeRandomNumber() {
-            let randomNumber = Math.floor(Math.random() * 10);
-            if (randomNumber == 0) {
-                return 1
-            } else {
-                return randomNumber
-            }
-
-        };
-
-        // function that returns the random number
-
-        function displayRandomNumber() {
-            randomNumberSelector.innerHTML = makeRandomNumber();
-        };
-        displayRandomNumber();
     </script>
 </body>
+<script type="text/javascript" src="script.js"></script>
 
 </html>
