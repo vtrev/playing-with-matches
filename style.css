@@ -1,0 +1,13 @@
+body {
+    margin: 0 auto;
+}
+
+#bigNumber {
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    background: cyan;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 200px;
+    border: 1px solid black;
+}

@@ -2,32 +2,40 @@
 <html>
 
 <head>
-    <title>The title of my page</title>
+    <title>Playing with matches</title>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
 
-
-
-    <style type="text/css">
-        body {
-            margin: 0 auto;
-        }
-
-        #bigNumber {
-            text-align: center;
-            width: 500px;
-            height: 400px;
-            background: cyan;
-            font-family: 'Baloo Bhai', cursive;
-            font-size: 200px;
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="bigNumber">
         56
     </div>
+
+    <script type="text/javascript">
+        // grtting the div to place the random number
+        let randomNumberSelector = document.getElementById('bigNumber');
+
+        // function that creates a random number between 1 and 9
+
+        function makeRandomNumber() {
+            let randomNumber = Math.floor(Math.random() * 10);
+            if (randomNumber == 0) {
+                return 1
+            } else {
+                return randomNumber
+            }
+
+        };
+
+        // function that returns the random number
+
+        function displayRandomNumber() {
+            randomNumberSelector.innerHTML = makeRandomNumber();
+        };
+        displayRandomNumber();
+    </script>
 </body>
 
 </html>
